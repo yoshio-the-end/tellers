@@ -5,7 +5,7 @@
     </h1>
     <div class="right_box">
       <p class="name">
-       <a href="#"><%= @post.user.name %></a>
+       <%= link_to @post.user.name, user_path(@post.user) %>
       </p>
       <p class="date">
       <%= @post.created_at.strftime("%Y年%m月%d日 %H:%M") %>

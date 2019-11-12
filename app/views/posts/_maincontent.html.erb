@@ -14,7 +14,7 @@
             <%= link_to post.title, post_path(post.id) %>
             </div>
             <div class="news box">
-            <a href="#">TELLER : <%= post.user.name %></a>
+            TELLER : <%= link_to post.user.name, user_path(post.user) %>
             </div>
             <div class="news box">
             <a href="#">カテゴリ : <%= post.category.name %></a>
