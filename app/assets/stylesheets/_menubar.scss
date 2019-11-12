@@ -1,0 +1,97 @@
+header {
+  width: 100vw;
+  height: 85px;
+}
+
+.menu_bar {
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  line-height: 60px;
+  font-size: 14px;
+}
+
+.menu_list {
+  display: flex;
+  align-items: center;
+  ul{
+    display: flex;
+    align-items: center;
+    li{
+      text-align: center;
+      line-height: 20px;
+      padding-left: 15px;
+      height: 20px;
+      width: 79px;
+      a{
+        color: black;
+      }
+    }
+  }
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  .form_area {
+    height: 40px;
+    width: 300px;
+    padding: 0 10px;
+    background-color: white;
+    font-size: 14px;
+    border: 1px solid black;
+  }
+}
+
+.btn {
+  height: 20px;
+  border-right: 1px solid black;
+  padding: 10px;
+  color: black;
+  cursor: pointer;
+}
+
+.btn:hover {
+  a{
+  border-bottom: 5px solid red;
+  transition: 400ms;
+  }
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  &__user_name{
+    width: 100px;
+    margin-right: 15px;
+  }
+  ul{
+    display: flex;
+    align-items: center;
+    li{
+      text-align: center;
+      line-height: 20px;
+      padding-left: 15px;
+      height: 20px;
+      width: 99px;
+      a{
+        color: black;
+      }
+    }
+  }
+}
+
+.search_btn {
+  height: 40px;
+  padding: 10px;
+  border: 1px solid black;
+  margin-left: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.search_btn:hover {
+  background-color: red;
+  color: white;
+  transition: 400ms;
+}

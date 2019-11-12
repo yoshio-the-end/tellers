@@ -1,0 +1,64 @@
+.form_box {
+  padding: 30px 10px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  h2{
+    font-size: 30px;
+  }
+  .field {
+    width: 70vw;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .text{
+      align-items: center;
+      padding: 5px 5px;
+    }
+    &__btn{
+      font-style:normal;
+      color:#000000;
+      border:1px solid black;
+      padding:10px 60px;
+      cursor:pointer;
+      margin:0 auto;
+        &:hover{
+        background-color: red;
+        color: white;
+        transition: 400ms;
+      }
+    }
+  }
+}
+
+#post_category_id {
+  width: 200px;
+  height: 40px;
+  padding: 10px;
+}
+
+.create {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form_name {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.text_field{
+  width: 100%;
+}
+
+.text_area{
+  height: 50vh;
+  width: 100%;
+}

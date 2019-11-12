@@ -1,0 +1,25 @@
+$white: #fafafa;
+$black: #222;
+
+body {
+  background-color: #fafafa;
+}
+
+.wrapper {
+  position: relative;/*←相対位置*/
+  padding-bottom: 120px;/*←footerの高さ*/
+  box-sizing: border-box;/*←全て含めてmin-height:100vhに*/
+}
+.contents_wrapper {
+  width: 80%;
+  background-color: #fafafa;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+
+.bg {
+  background-color: #fafafa;
+  background-image: url("/paper.png");
+  height: 100vh;
+  padding: 20px 0;
+}

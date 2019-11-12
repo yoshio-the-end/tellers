@@ -1,0 +1,18 @@
+.upper_container {
+  margin: 0 auto;
+  width: 60%;
+  display: flex;
+  padding: 60px 0;
+  justify-content: space-between;
+  border-bottom: 2px dashed black;
+  align-items: center;
+  a{
+    color: black;
+  }
+}
+
+.text_box{
+  margin: 0 auto;
+  width: 60%;
+  padding: 20px 0;
+}

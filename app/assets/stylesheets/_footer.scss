@@ -1,0 +1,24 @@
+footer{
+  color: white;
+  padding: 10px 20px;
+  width: calc(100vw - 40px);
+  height: 120px;
+  position: absolute;/*←絶対位置*/
+  bottom: 0; /*下に固定*/
+}
+
+.footer_menu{
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  line-height: 120px;
+  a{
+    color: black;
+    margin: 0 1%;
+  }
+  a:hover{
+    color: red;
+    transition: 400ms;
+  }
+}

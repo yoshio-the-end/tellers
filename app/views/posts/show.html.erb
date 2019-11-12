@@ -1,0 +1,18 @@
+<div class="contents_wrapper bg">
+  <div class="upper_container">
+    <h1 class="title">
+    <%= @post.title %>
+    </h1>
+    <div class="right_box">
+      <p class="name">
+       <a href="#"><%= @post.user.name %></a>
+      </p>
+      <p class="date">
+      <%= @post.created_at.strftime("%Y年%m月%d日 %H:%M") %>
+      </p>
+    </div>
+  </div>
+  <div class="text_box">
+  <p><%= simple_format(@post.text) %></p>
+  </div>
+</div>
