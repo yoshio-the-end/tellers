@@ -76,11 +76,19 @@ article {
 }
 
 .content {
+  width: 100%;
   display: flex;
   align-items: center;
   border-bottom: 1px solid gray;
   justify-content: space-between;
   padding: 15px 0;
+  a{
+    color: black;
+  }
+  a:hover {
+    color: red;
+    transition: 400ms;
+  }
   .title{
     align-items: center;
     a{
