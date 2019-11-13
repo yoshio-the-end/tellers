@@ -3,7 +3,7 @@
     <h1 class="title">
     <%= @post.title %>
     </h1>
-    <div class="right_box">
+    <div class="users_box">
       <p class="name">
        <%= link_to @post.user.name, user_path(@post.user) %>
       </p>
@@ -12,13 +12,19 @@
       </p>
       <% if user_signed_in? && current_user.id == @post.user_id %>
         <div class="postManage">
-         <%= link_to "編集", edit_post_path(@post.id), class: "postManage__edit" %>
-         <%= link_to "削除", post_path(@post.id), method: :delete, class: "postManage__delete" %>
+           <%= link_to "編集", edit_post_path(@post.id), class: "postManage__edit" %>
+           <%= link_to "削除", post_path(@post.id), method: :delete, class: "postManage__delete" %>
        </div>
       <% end %>
     </div>
   </div>
   <div class="text_box">
   <%= safe_join(@post.text.split("\n"), tag(:br)) %>
+  <div class="good_box">
+    <div class="line-it-button" data-lang="ja" data-type="like" data-url="https://org-media.line.me/ja/how_to_install#lineitbutton" style="display: none;"></div>
+    <script src="https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js" async="async" defer="defer"></script>
+    <div class="line-it-button" data-lang="ja" data-type="share-a" data-ver="3" data-url="https://org-media.line.me/ja/how_to_install#lineitbutton" data-color="default" data-size="small" data-count="false" style="display: none;"></div>
+    <script src="https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js" async="async" defer="defer"></script>
+    <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
   </div>
 </div>
