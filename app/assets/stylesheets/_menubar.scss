@@ -4,9 +4,10 @@ header {
 }
 
 .menu_bar {
-  padding: 10px 20px;
+  padding: 0 20px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   line-height: 60px;
   font-size: 14px;
 }
@@ -14,20 +15,6 @@ header {
 .menu_list {
   display: flex;
   align-items: center;
-  ul{
-    display: flex;
-    align-items: center;
-    li{
-      text-align: center;
-      line-height: 20px;
-      padding-left: 15px;
-      height: 20px;
-      width: 79px;
-      a{
-        color: black;
-      }
-    }
-  }
 }
 
 .form {
@@ -44,8 +31,7 @@ header {
 }
 
 .btn {
-  height: 20px;
-  border-right: 1px solid black;
+  align-items: center;
   padding: 10px;
   color: black;
   cursor: pointer;
@@ -53,7 +39,7 @@ header {
 
 .btn:hover {
   a{
-  border-bottom: 5px solid red;
+  background-color: #fafafa;
   transition: 400ms;
   }
 }
@@ -94,4 +80,59 @@ header {
   background-color: red;
   color: white;
   transition: 400ms;
+}
+
+//dropdwn
+
+.dropdwn{
+  max-width: 25%;
+  display: flex;
+}
+
+ul{
+  text-align: center;
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+  color: black;
+}
+li{
+  position: relative;
+  padding: 5px;
+  display: block;
+  cursor: pointer;
+}
+
+.dropdwn>li{
+  width: 1200px;
+  margin: 1px;
+  background: #fafafa;
+  display: inline;
+}
+
+.dropdwn_menu{
+  width: 100%;
+  display: none;
+  position: absolute;
+  margin-left: -5px;
+  margin-top: 5px;
+  padding: 0;
+  background: #fafafa;
+}
+
+.dropdwn_menu li{
+  width: 100%;
+}
+
+.dropdwn_menu li a{
+  padding: 5px 0;
+  margin: -5px 5px -5px -5px;
+  display: block;
+  color: black;
+}
+
+li a:hover{
+  background: #fafafa;
+  color: red;
+  border-bottom:2px solid red;
 }

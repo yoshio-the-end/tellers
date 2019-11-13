@@ -14,13 +14,18 @@
     <div class="wrapper">
   <header>
     <div class="menu_bar">
-      <img src ="/title.png">
-      <div class="menu_list">
-        <ul>
-          <li class="btn"><%= link_to "TOP", root_path %></li>
-          <li class="btn"><%= link_to "カテゴリ", root_path %></li>
+      <a href="/"><img src ="/title.png"></a>
+        <ul class="dropdwn">
+          <li>カテゴリ
+            <ul class="dropdwn_menu">
+                <li><a href="/categories/1">怪談</a></li>
+                <li><a href="/categories/2">奇妙な話</a></li>
+                <li><a href="/categories/3">都市伝説</a></li>
+                <li><a href="/categories/4">実話体験談</a></li>
+                <li><a href="/categories/5">その他</a></li>
+            </ul>
+          </li>
         </ul>
-      </div>
       <div class="form">
         <input type="text" name="search" class="form_area" placeholder="タイトル名で検索">
         <input type="submit" name="submit" class="search_btn" value="検索">
@@ -55,6 +60,6 @@
       <a href="#">お問い合わせ</a>
   </footer>
   </div>
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   </body>
 </html>
