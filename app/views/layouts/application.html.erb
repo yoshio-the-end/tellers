@@ -17,8 +17,8 @@
       <img src ="/title.png">
       <div class="menu_list">
         <ul>
-          <li class="btn"><a href="/">TOP</a></li>
-          <li class="btn"><a href="#">カテゴリ</a></li>
+          <li class="btn"><%= link_to "TOP", root_path %></li>
+          <li class="btn"><%= link_to "カテゴリ", root_path %></li>
         </ul>
       </div>
       <div class="form">
@@ -28,7 +28,7 @@
       <div class="info">
         <div class="info__user_name">
         <% if user_signed_in? %>
-        <p><%= current_user.name %></p>
+        <p><%= link_to current_user.name, user_path(current_user)%></p>
         <% end %>
         </div>
         <% if user_signed_in? %>

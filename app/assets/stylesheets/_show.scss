@@ -1,6 +1,6 @@
 .upper_container {
   margin: 0 auto;
-  width: 60%;
+  width: 70%;
   display: flex;
   padding: 60px 0;
   justify-content: space-between;
@@ -9,10 +9,30 @@
   a{
     color: black;
   }
+  a:hover {
+    color: red;
+    transition: 400ms;
+  }
 }
 
 .text_box{
   margin: 0 auto;
-  width: 60%;
+  width: 70%;
   padding: 20px 0;
+}
+
+.index {
+  margin: 0 auto;
+  width: 70%;
+  display: flex;
+}
+
+.postManage {
+  a{
+    color: black;
+  }
+  a:hover {
+    color: red;
+    transition: 400ms;
+  }
 }

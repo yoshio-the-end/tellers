@@ -1,0 +1,22 @@
+<div class="contents_wrapper bg">
+  <div class="upper_container">
+    <div class="title">
+      TELLER : <%= @user.name %>　さんの投稿
+    </div>
+  </div>
+    <% @posts.each do |post| %>
+    <div class="index">
+    <div class="content">
+      <div class="title box">
+      <%= link_to post.title, post_path(post.id) %>
+      </div>
+      <div class="news box">
+      <a href="#">カテゴリ : <%= post.category.name %></a>
+      </div>
+      <div class="news box">
+      <p>記録日 : <%= post.created_at.strftime("%Y年%m月%d日") %></p>
+      </div>
+   </div>
+  </div>
+  <% end %>
+</div>

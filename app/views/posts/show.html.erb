@@ -5,14 +5,20 @@
     </h1>
     <div class="right_box">
       <p class="name">
-       <a href="#"><%= @post.user.name %></a>
+       <%= link_to @post.user.name, user_path(@post.user) %>
       </p>
       <p class="date">
       <%= @post.created_at.strftime("%Y年%m月%d日 %H:%M") %>
       </p>
+      <% if user_signed_in? && current_user.id == @post.user_id %>
+        <div class="postManage">
+         <%= link_to "編集", edit_post_path(@post.id), class: "postManage__edit" %>
+         <%= link_to "削除", post_path(@post.id), method: :delete, class: "postManage__delete" %>
+       </div>
+      <% end %>
     </div>
   </div>
   <div class="text_box">
-  <p><%= simple_format(@post.text) %></p>
+  <%= safe_join(@post.text.split("\n"), tag(:br)) %>
   </div>
 </div>
