@@ -2,7 +2,7 @@
   margin: 0 auto;
   width: 70%;
   display: flex;
-  padding: 60px 0;
+  padding: 40px 0;
   justify-content: space-between;
   border-bottom: 2px dashed black;
   align-items: center;
@@ -28,6 +28,9 @@
 }
 
 .postManage {
+  margin-top: 8px;
+  display: flex;
+  justify-content: flex-end;
   a{
     color: black;
   }
@@ -35,4 +38,30 @@
     color: red;
     transition: 400ms;
   }
+  &__edit{
+    background-color: #fafafa;
+    border: 1px solid black;
+    padding: 4px 8px;
+  }
+  &__delete{
+    background-color: #fafafa;
+    border: 1px solid black;
+    padding: 4px 8px;
+    margin-left: 4px;
+  }
+}
+
+.users_box{
+  width:30%;
+  display: flex;
+  flex-direction: column;
+  text-align: end;
+  justify-content: flex-end;
+}
+
+.good_box {
+  padding: 16px 0;
+  display: flex;
+  border-top: 2px dashed black;
+  margin-top: 16px;
 }
