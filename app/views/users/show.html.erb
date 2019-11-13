@@ -11,7 +11,7 @@
       <%= link_to post.title, post_path(post.id) %>
       </div>
       <div class="news box">
-      <a href="#">カテゴリ : <%= post.category.name %></a>
+      カテゴリ : <%= link_to post.category.name, category_path(post.category) %>
       </div>
       <div class="news box">
       <p>記録日 : <%= post.created_at.strftime("%Y年%m月%d日") %></p>
